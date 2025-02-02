@@ -1,0 +1,574 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: balance;
+}
+
+:root {
+    --primary-color: #1A1849;
+    --secondary-color: #ffffff;
+    --accent-color: #ffd700;
+    --text-color: #333333;
+    --spacing-unit: 1rem;
+}
+
+body {
+    font-family: montserrat;
+    line-height: 1.7;
+    color: var(--text-color);
+    background-color: #1A1849;
+}
+
+/* Header and Navigation */
+.header {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    /* align-items: center;
+    justify-content: space-between; */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-img {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid yellow; */
+
+}
+
+.login-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login-cta {
+    background: #ffff;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: var(--text-color);
+
+}
+
+/* @media(max-with:768px){
+    .login-cta, .login-container{
+        display: none;
+
+    }
+} */
+
+.login-cta:hover {
+    transform: translateY(-3px);
+
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* grid-template-columns: repeat(2,1fr); */
+    /* place-content: center; */
+    align-items: center;
+    background: url('assets/images/hunters-race-MYbhN8KaaEc-unsplash.jpg') center/cover no-repeat;
+    color: var(--secondary-color);
+    padding: 2rem;
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    display: flex;
+
+    img {
+        width: 100%;
+        object-fit: contain;
+        /* mix-blend-mode: luminosity; */
+    }
+}
+
+.overlay {
+    border-image: linear-gradient(#1a18499c, #1A1849) fill 1;
+}
+.overlay-2 {
+    border-image: linear-gradient( #1A1849,#1a18499c, #1A1849) fill 1;
+}
+
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+    span {
+        color: var(--accent-color);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+
+.hero-content p {
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    /* font-family: 'bubbler one'; */
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 8px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    background-color: #e7c500;
+}
+
+/* Company Info Section */
+.company-info {
+    padding: 5rem 2rem;
+    background-color: #f0f0f0;
+    color: #1A1849;
+    border-radius: 0 250px 250px 0;
+    box-shadow: 0 100px 80px #00000012, 0 64px 46px #0000000f, 0 40px 25px #0000000d, 0 20px 13px #0000000a, 0 8px 7px #00000008, 0 2px 3px #00000005;
+
+}
+
+.company-card {
+    max-width: 800px;
+    margin: 0 auto;
+    /* text-align: center; */
+    padding-bottom: 10px;
+
+    span {
+        color: #1A1849;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin-bottom: 15px;
+        text-align: left;
+        /* border: 1px solid; */
+        color: #666;
+    }
+
+}
+
+.company-card .login-cta {
+    color: #ffffff;
+    /* border: 1px solid #c9c9c9; */
+    /* box-shadow: 0 100px 80px #00000012, 0 64px 46px #0000000f, 0 40px 25px #0000000d, 0 20px 13px #0000000a, 0 8px 7px #00000008, 0 2px 3px #00000005; */
+    background-color: #3498db;
+
+}
+
+.company-card .login-cta:hover{
+    background-color: #2675aa;
+}
+
+.company-crest {
+    width: 200px;
+    margin-bottom: 2rem;
+}
+
+/* Features Section */
+.features {
+    padding: 5rem 2rem;
+    background: url('assets/images/pexels-cottonbro-9665359.jpg') center/cover no-repeat;
+    /* background-color: #f5f5f5; */
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    /* background: var(--secondary-color); */
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.feature-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 25px 25px 5px 5px;
+    margin-bottom: 15px;
+    /* transition: all .3s ease; */
+    box-shadow: 0 100px 80px #00000012, 0 64px 46px #0000000f, 0 40px 25px #0000000d, 0 20px 13px #0000000a, 0 8px 7px #00000008, 0 2px 3px #00000005;
+}
+
+/* .feature-card img:hover{
+} */
+
+.feature-card h3 {
+    padding: 1rem;
+    color: var(--secondary-color);
+}
+
+.feature-card p {
+    padding: 0 1rem 1rem;
+    color: #ffffff9f;
+    /* border: 1px solid; */
+    text-wrap: wrap;
+}
+
+/* Container Styles */
+.review-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: white; */
+    padding: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* height: 70vh; */
+    place-content: center;
+}
+
+.review-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #ffff;
+}
+
+/* Existing Reviews Styles */
+.existing-reviews {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.review-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid #e7e7e7;
+}
+
+.review-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.review-stars {
+    color: #ffd700;
+    margin-right: 0.5rem;
+}
+
+.review-rating-text {
+    color: #ffffff9f;
+}
+
+.review-quote {
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.review-author {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.review-company {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Form Styles */
+.review-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.form-group {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.star-rating {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.star {
+    font-size: 2rem;
+    color: #e0e0e0;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star:hover,
+.star.active {
+    color: #ffd700;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.name-company-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.submit-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 600px) {
+    .name-company-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .review-container {
+        padding: 1rem;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #f0f0f0;
+    color: var(--primary-color);
+    padding: 3rem 2rem;
+    /* background-image: url(images/pexels-dmitry-demidov-515774-6789021.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+    /* border-radius:250px 0 0 250px; */
+
+}
+
+.footer-footer {
+    border-bottom: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    border-top: 1px solid;
+    padding-top: 15px;
+
+}
+
+.contact-info {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid;
+    padding: 15px;
+}
+
+.fa-solid {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* .fa-map-pin{
+    color: red;
+} */
+
+
+.newsletter {
+    border-bottom: 1px solid;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.newsletter-form input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+.newsletter-form button {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 8px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .3s ease;
+}
+
+.newsletter-form button:hover {
+    transform: translateY(-3px);
+    background-color: #e7c500;
+}
+
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+    display: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .mobile-nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        /* border: 1px solid #ffff; */
+        color: var(--secondary-color);
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
+        padding: 1rem;
+        border: 1px solid red;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .login-cta {
+        padding: 5px 12px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 1rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+}

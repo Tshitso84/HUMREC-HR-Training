@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humrec Training - Expert Team Training Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="logo">
+                <img src="logo.png" alt="Humrec Logo" class="logo-img">
+            </div>
+            <div class="login-container">
+                <button class=" login-cta">Login</button>
+            </div>
+
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero overlay">
+            <!-- <div class="hero-img">
+                <img src="/images/image_fx_(14)(1).jpg" alt="">
+            </div> -->
+
+            <div class="hero-content">
+                <h1>Empower Your Team with Expert Training</h1>
+                <p>At <span>Humrec</span>, we provide expert training programs designed to enhance your team's skills
+                    and safety knowledge. Our mission is to empower all industries through training excellence.</p>
+                <button class="cta-button">Register</button>
+
+                <!-- <div class="social proof">
+                    <span><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+                    <p>The training I received from Humrec transformed our safety protocols and our empowered our team to work confidently</p>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="company-info ">
+            <div class="company-card">
+                <img src="company-crest.png" alt="Humrec Crest" class="company-crest">
+                <h2>Humrec Human Resource Training was founded in 1990</h2>
+                <p></p>
+                <p>At <span>Humrec</span> we offer cutting-edge training for the most advanced skills through leading
+                    methodologies and the highest standards.</p>
+                <button class="login-cta">Learn More</button>
+            </div>
+        </section>
+
+        <section class="features overlay-2">
+            <h2>Unlock Your Team's Potential with Training</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="assets/images/pexels-firelar-4212623.jpg" alt="Diverse Training Programs">
+                    <h3>Diverse Training Programs for Every Industry</h3>
+                    <p>We offer specialised courses for various sectors</p>
+                </div>
+                <div class="feature-card">
+                    <img src="assets/images/pexels-justphotof-21923132.jpg" alt="Expert Instructors">
+                    <h3>Expert Instructors with Real-World Experience</h3>
+                    <p>Learn from industry professionals who bring practical insights</p>
+                </div>
+                <div class="feature-card">
+                    <img src="assets/images/pexels-rdne-7092450.jpg" alt="Flexible Learning">
+                    <h3>Flexible Learning Options to Suit Your Needs</h3>
+                    <p>Choose from online to in-person or hybrid formats</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="review-container">
+        <h2 class="review-title">Client Reviews</h2>
+
+        <div id="existing-reviews" class="existing-reviews">
+            <!-- Dynamically added reviews will appear here -->
+        </div>
+
+        <form id="review-form" class="review-form">
+            <div class="form-group tag">
+                <label>Rate Your Satisfaction</label>
+                <div id="star-rating" class="star-rating">
+                    <span class="star" data-rating="1">★</span>
+                    <span class="star" data-rating="2">★</span>
+                    <span class="star" data-rating="3">★</span>
+                    <span class="star" data-rating="4">★</span>
+                    <span class="star" data-rating="5">★</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="quote">Review</label>
+                <textarea id="quote" rows="4" required></textarea>
+            </div>
+
+            <div class="name-company-grid">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company & Role</label>
+                    <input type="text" id="company" required>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Review</button>
+        </form>
+    </div>
+
+    <footer class="footer ">
+        <div class="footer-content">
+
+            <div class="footer-info">
+                <div class="contact-info">
+                    <p><strong>Office :</strong> <br>6 Robyn Evenue <br>Waldrift Vereeniging </p>
+                    <p><strong>Contact :</strong> <br>+27 87 110 0648</p>
+                    <p><strong>Email :</strong> <br>humrec@.lantec.net</p>
+                </div>
+                <div class="newsletter">
+                    <h3>Subscribe</h3>
+                    <p>Stay up to date with our latest news and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-footer">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Humrec Logo" class="footer-logo-img">
+                </div>
+                <div class="copyright">
+                    Copyright &copy; 2025, HUMREC. All Rights Reserved.
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
