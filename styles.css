@@ -231,9 +231,14 @@ ul {
 /* Features Section */
 .features {
     padding: 5rem 2rem;
-    background: url('assets/images/pexels-cottonbro-9665359.jpg') center/cover no-repeat;
+    background: url(assets/images/pexels-cottonbro-9665359.jpg) center/cover no-repeat;
     /* background-color: #f5f5f5; */
 }
+
+.features.lazy{
+    background: none;
+}
+
 
 .features h2 {
     text-align: center;
