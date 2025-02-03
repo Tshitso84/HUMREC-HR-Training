@@ -11,26 +11,25 @@
 
 <body>
     <header class="header">
-        <nav class="nav">
-            <ul class="nav-links" id="primary-navigation">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="logo">
-                <img src="logo.png" alt="Humrec Logo" class="logo-img">
-            </div>
-            <div class="login-container">
-                <button class=" login-cta">Login</button>
-            </div>
-
-            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-                <span class="sr-only">Menu</span>
+        <nav class="navbar">
+            <button class="hamburger" aria-label="Menu">
+              <span></span>
+              <span></span>
+              <span></span>
             </button>
-        </nav>
-    </header>
-
+          
+            <div class="nav-links">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#contact">Contact</a>
+            </div>
+            
+            <img src="assets/images/Placeholder Image.png" alt="Logo" class="logo">
+            
+            <button class="login-button">Login</button>
+          </nav>
+          <div class="overlay"></div>
     <main>
         <section class="hero overlay">
             <!-- <div class="hero-img">
