@@ -344,7 +344,15 @@ h1 {
     }
 
     .hero {
-        height: 70vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .hero-img{
+        height: auto;
     }
 
     h1 {
