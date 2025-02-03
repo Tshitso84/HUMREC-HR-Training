@@ -13,115 +13,127 @@
     <header class="header">
         <nav class="navbar">
             <button class="hamburger" aria-label="Menu">
-              <span></span>
-              <span></span>
-              <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-          
+
             <div class="nav-links">
-              <a href="#home">Home</a>
-              <a href="#about">About</a>
-              <a href="#services">Services</a>
-              <a href="#contact">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
             </div>
-            
+
             <img src="assets/images/Placeholder Image.png" alt="Logo" class="logo">
-            
+
             <button class="login-button">Login</button>
-          </nav>
-          <div class="overlay"></div>
-    <main>
-        <section class="hero overlay">
-            <!-- <div class="hero-img">
+        </nav>
+        <div class="overlay"></div>
+        <main>
+            <section class="hero overlay">
+                <!-- <div class="hero-img">
                 <img src="/images/image_fx_(14)(1).jpg" alt="">
             </div> -->
 
-            <div class="hero-content">
-                <h1>Empower Your Team with Expert Training</h1>
-                <p>At <span>Humrec</span>, we provide expert training programs designed to enhance your team's skills
-                    and safety knowledge. Our mission is to empower all industries through training excellence.</p>
-                <button class="cta-button">Register</button>
+                <div class="hero-content">
+                    <h1>Empower Your Team with Expert Training</h1>
+                    <p>At <span>Humrec</span>, we provide expert training programs designed to enhance your team's
+                        skills
+                        and safety knowledge. Our mission is to empower all industries through training excellence.</p>
+                    <button class="cta-button">Register</button>
 
-                <!-- <div class="social proof">
+                    <!-- <div class="social proof">
                     <span><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
                     <p>The training I received from Humrec transformed our safety protocols and our empowered our team to work confidently</p>
                 </div> -->
-            </div>
-        </section>
-
-        <section class="company-info ">
-            <div class="company-card">
-                <img src="company-crest.png" alt="Humrec Crest" class="company-crest">
-                <h2>Humrec Human Resource Training was founded in 1990</h2>
-                <p></p>
-                <p>At <span>Humrec</span> we offer cutting-edge training for the most advanced skills through leading
-                    methodologies and the highest standards.</p>
-                <button class="login-cta">Learn More</button>
-            </div>
-        </section>
-
-        <section class="features overlay-2">
-            <h2>Unlock Your Team's Potential with Training</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <img src="assets/images/pexels-firelar-4212623.jpg" loading="lazy" alt="Diverse Training Programs">
-                    <h3>Diverse Training Programs for Every Industry</h3>
-                    <p>We offer specialised courses for various sectors</p>
                 </div>
-                <div class="feature-card">
-                    <img src="assets/images/pexels-justphotof-21923132.jpg" loading="lazy" alt="Expert Instructors">
-                    <h3>Expert Instructors with Real-World Experience</h3>
-                    <p>Learn from industry professionals who bring practical insights</p>
+            </section>
+
+            <section class="company-info ">
+                <div class="company-card">
+                    <div class="company-card-imgContainer">
+                        <img src="assets/images/Placeholder Image.png" alt="Humrec Crest" class="company-crest">
+                    </div>
+                    <div class="company-card-content">
+                        <h2>Humrec Human Resource Training was founded in 1990</h2>
+                        <p></p>
+                        <p>At <span>Humrec</span> we offer cutting-edge training for the most advanced skills through
+                            leading
+                            methodologies and the highest standards.</p>
+                        <div class="reg-cta">
+                            <button class="register-button">
+                                Register Now
+                                <span class="arrow">→</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <img src="assets/images/pexels-rdne-7092450.jpg" loading="lazy" alt="Flexible Learning">
-                    <h3>Flexible Learning Options to Suit Your Needs</h3>
-                    <p>Choose from online to in-person or hybrid formats</p>
+            </section>
+
+            <section class="features overlay-2">
+                <h2>Unlock Your Team's Potential with Training</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="assets/images/pexels-firelar-4212623.jpg" loading="lazy"
+                            alt="Diverse Training Programs">
+                        <h3>Diverse Training Programs for Every Industry</h3>
+                        <p>We offer specialised courses for various sectors</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/images/pexels-justphotof-21923132.jpg" loading="lazy" alt="Expert Instructors">
+                        <h3>Expert Instructors with Real-World Experience</h3>
+                        <p>Learn from industry professionals who bring practical insights</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/images/pexels-rdne-7092450.jpg" loading="lazy" alt="Flexible Learning">
+                        <h3>Flexible Learning Options to Suit Your Needs</h3>
+                        <p>Choose from online to in-person or hybrid formats</p>
+                    </div>
                 </div>
+            </section>
+        </main>
+
+        <div class="review-container">
+            <h2 class="review-title">Client Reviews</h2>
+
+            <div id="existing-reviews" class="existing-reviews">
+                <!-- Dynamically added reviews will appear here -->
             </div>
-        </section>
-    </main>
 
-    <div class="review-container">
-        <h2 class="review-title">Client Reviews</h2>
+            <form id="review-form" class="review-form">
+                <div class="form-group tag">
+                    <label>Rate Your Satisfaction</label>
+                    <div id="star-rating" class="star-rating">
+                        <span class="star" data-rating="1">★</span>
+                        <span class="star" data-rating="2">★</span>
+                        <span class="star" data-rating="3">★</span>
+                        <span class="star" data-rating="4">★</span>
+                        <span class="star" data-rating="5">★</span>
+                    </div>
+                </div>
 
-        <div id="existing-reviews" class="existing-reviews">
-            <!-- Dynamically added reviews will appear here -->
+                <div class="form-group">
+                    <label for="quote">Review</label>
+                    <textarea id="quote" rows="4" required></textarea>
+                </div>
+
+                <div class="name-company-grid">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company & Role</label>
+                        <input type="text" id="company" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Review</button>
+            </form>
         </div>
 
-        <form id="review-form" class="review-form">
-            <div class="form-group tag">
-                <label>Rate Your Satisfaction</label>
-                <div id="star-rating" class="star-rating">
-                    <span class="star" data-rating="1">★</span>
-                    <span class="star" data-rating="2">★</span>
-                    <span class="star" data-rating="3">★</span>
-                    <span class="star" data-rating="4">★</span>
-                    <span class="star" data-rating="5">★</span>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="quote">Review</label>
-                <textarea id="quote" rows="4" required></textarea>
-            </div>
-
-            <div class="name-company-grid">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="company">Company & Role</label>
-                    <input type="text" id="company" required>
-                </div>
-            </div>
-
-            <button type="submit" class="submit-btn">Submit Review</button>
-        </form>
-    </div>
-
-    <!-- <footer class="footer ">
+        <!-- <footer class="footer ">
         <div class="footer-content">
 
             <div class="footer-info">
@@ -149,7 +161,7 @@
 
 
 
- <!-- <footer>
+        <!-- <footer>
     <div class="footer-content">
         <address>
             <h3>Location</h3>
@@ -208,67 +220,68 @@
     </div>
 </footer> -->
 
-<footer class="footer">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>Location</h3>
-        <button class="footer-btn">
-        <a href="https://g.co/kgs/NZQwfnn">
-        <p>6 Robyn Avenue</p>
-        <p>Waldrift</p>
-        <p>1913</p></a></button>
-        <br>
-        <button class="footer-btn"><a href="https://maps.app.goo.gl/YPeVzr4pqta5qvy88">
-        <p>256 Amalthea Road</p>
-        <p>S&J Industrial Precinct</p>
-        <p>Germiston</p>
-        <p>1407</p>
-    </a></button>
-      </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Location</h3>
+                    <button class="footer-btn">
+                        <a href="https://g.co/kgs/NZQwfnn">
+                            <p>6 Robyn Avenue</p>
+                            <p>Waldrift</p>
+                            <p>1913</p>
+                        </a></button>
+                    <br>
+                    <button class="footer-btn"><a href="https://maps.app.goo.gl/YPeVzr4pqta5qvy88">
+                            <p>256 Amalthea Road</p>
+                            <p>S&J Industrial Precinct</p>
+                            <p>Germiston</p>
+                            <p>1407</p>
+                        </a></button>
+                </div>
 
-      <div class="footer-section">
-        <h3>Quick links</h3>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Certifications</a></li>
-          <li><a href="#">Testimonials</a></li>
-        </ul>
-      </div>
+                <div class="footer-section">
+                    <h3>Quick links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Certifications</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
 
-      <div class="footer-section">
-        <h3>Resources</h3>
-        <ul>
-          <li><a href="#">FAQs</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-      </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
 
-      <div class="footer-section">
-        <h3>Stay Updated</h3>
-        <ul>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Webinars</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Feedback</a></li>
-        </ul>
-      </div>
+                <div class="footer-section">
+                    <h3>Stay Updated</h3>
+                    <ul>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
 
-      <div class="footer-section newsletter">
-        <h3>Newsletter</h3>
-        <p>Stay up to date with our latest news and updates</p>
-        <input type="email" placeholder="Your email">
-        <button>Subscribe</button>
-      </div>
-    </div>
+                <div class="footer-section newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Stay up to date with our latest news and updates</p>
+                    <input type="email" placeholder="Your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
 
-    <div class="copyright">
-      <p>copyright ©2025 Humrec. All rights reserved</p>
-    </div>
-  </footer>
+            <div class="copyright">
+                <p>copyright ©2025 Humrec. All rights reserved</p>
+            </div>
+        </footer>
 
-    <script src="main.js"></script>
+        <script src="main.js"></script>
 </body>
 
 </html>
