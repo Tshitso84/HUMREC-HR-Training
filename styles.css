@@ -25,6 +25,8 @@ body {
     line-height: 1.7;
     color: var(--text-color);
     background-color: #1A1849;
+    background: url(assets/images/pexels-pixabay-73833.jpg) center/cover no-repeat;
+
 }
 
 /* Header and Navigation */
@@ -80,7 +82,7 @@ body {
     background-color: white;
     color: #1a1a3a;
     border: none;
-    padding: 8px 32px;
+    padding: 8px 18px;
     font-size: 16px;
     font-weight: 600;
     border-radius: 20px;
@@ -244,7 +246,7 @@ body {
 } */
 
 .overlay-2 {
-    border-image: linear-gradient(#1a1849, #1a1849be) fill 1;
+    border-image: linear-gradient(#1a1849, #1a1849ea) fill 1;
 }
 
 .overlay-3 {
@@ -516,7 +518,6 @@ h1 {
 .features {
     padding: 5rem .7rem;
     background-color: transparent;
-    background: url(assets/images/pexels-pixabay-73833.jpg) center/cover no-repeat;
     /* background-color: #f5f5f5; */
     /* display: flex;
     flex-direction: column;
