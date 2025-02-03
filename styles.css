@@ -82,7 +82,6 @@ body {
 @media(max-width:768px){
     .login-cta{
         display: none;
-
     }
 }
 
@@ -654,6 +653,20 @@ address {
     font-size: 14px;
     line-height: 1.5;
   }
+
+  .footer-section a{
+    color: #666;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+  }
+
+
+  .footer-section  a:hover{
+    font-weight: 600;
+}
+
+  
 
   .footer-section ul {
     list-style: none;
