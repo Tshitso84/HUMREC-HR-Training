@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-wrap: balance;
+    /* outline: 1px solid red; */
 }
 
 :root {
@@ -32,7 +33,7 @@ body {
     padding: 1rem 2rem;
     position: fixed;
     width: 100%;
-    border: 1px solid #fff;
+    border: 1px solid red solid #fff;
     z-index: 1000;
     position: fixed;
     flex-shrink: 0;
@@ -168,6 +169,14 @@ body {
     .overlay.active {
         display: block;
     }
+
+    .hero-img {
+        height: auto;
+
+        img {
+            width: 100%;
+        }
+    }
 }
 
 
@@ -182,13 +191,19 @@ body {
     color: var(--secondary-color);
     position: relative;
     overflow: hidden;
+}
+
+
+@media(max-width:768px){
+    .hero{
+        height: 65vh;
+    }
 
 
 }
-
 .hero-img {
     margin: 0 auto;
-    /* border: 1px solid #fff; */
+    /* border: 1px solid red solid #fff; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -199,7 +214,7 @@ body {
 
 
     img {
-        width: 50%;
+        width: 100%;
         height: auto;
         object-fit: cover;
     }
@@ -208,16 +223,16 @@ body {
         position: absolute;
         bottom: 0;
         left: 20%;
-        width: 100%;
+        /* width: 100%; */
 
     }
 
     .img-2 {
         position: absolute;
-        right: 0;
+        left: 0;
         bottom: 0;
         /* top: 27%; */
-        width: 100%;
+        /* width: 100%; */
 
     }
 
@@ -233,7 +248,7 @@ body {
 }
 
 .overlay-3 {
-    border-image: linear-gradient(#f0f0f000,#f0f0f049) fill 1;
+    border-image: linear-gradient(#f0f0f000, #f0f0f049) fill 1;
 }
 
 
@@ -246,6 +261,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     text-align: center;
+    padding: 1rem;
 
     span {
         color: var(--accent-color);
@@ -263,7 +279,8 @@ body {
 h1 {
     font-size: clamp(32px, 4vw, 60px);
     margin-bottom: 1.5rem;
-    line-height: 68px;font-weight: 600;
+    line-height: 68px;
+    font-weight: 600;
     text-align: left;
 }
 
@@ -303,7 +320,7 @@ h1 {
     max-width: 1200px;
     /* align-items: center;
     justify-content: space-between; */
-    /* border: 1px solid red; */
+    /* border: 1px solid red solid red; */
     margin: 0 auto;
     /* text-align: center; */
     padding-bottom: 10px;
@@ -317,7 +334,7 @@ h1 {
     p {
         margin-bottom: 15px;
         /* text-align: center; */
-        /* border: 1px solid; */
+        /* border: 1px solid red solid; */
         color: #666;
     }
 
@@ -348,32 +365,79 @@ h1 {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-between;
-        
+
     }
 
-    .hero-img{
+    .hero-img {
         height: auto;
+
+        img {
+            width: 40%;
+        }
     }
 
     h1 {
         line-height: 1.2;
         text-wrap: balance;
+        text-align: center;
+
     }
+
 
     .hero-content {
         max-width: 1200px;
-        margin-top: 70%;
+        margin-top: 40%;
+
+        button {
+            width: 100px;
+        }
     }
+
+    .hero-content p {
+        text-align: center;
+
+    }
+
 
     .reg-cta {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     /* .company-card-imgContainer{
         width: 220px; 
         border: 2px solid red;
     } */
+}
+
+@media(max-width:968px) {
+    .hero-img {
+        height: auto;
+
+        img {
+            width: 50%;
+        }
+    }
+
+    .hero{
+        height: 100vh;
+    }
+}
+
+@media(max-width:868px) {
+    .hero-img {
+        height: auto;
+
+        img {
+            width: 60%;
+        }
+    }
+
+    /* .hero{
+        height: 75vh;
+    } */
+
 }
 
 .reg-cta {
@@ -420,7 +484,7 @@ h1 {
 
 .company-card-content {
 
-    /* border: 1px solid red; */
+    /* border: 1px solid red solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -430,7 +494,7 @@ h1 {
 
 .company-card .login-cta {
     color: #ffffff;
-    /* border: 1px solid #c9c9c9; */
+    /* border: 1px solid red solid #c9c9c9; */
     /* box-shadow: 0 100px 80px #00000012, 0 64px 46px #0000000f, 0 40px 25px #0000000d, 0 20px 13px #0000000a, 0 8px 7px #00000008, 0 2px 3px #00000005; */
     background-color: #3498db;
 
@@ -459,7 +523,7 @@ h1 {
 
 .features-title-container {
     display: flex;
-    /* border: 1px solid red; */
+    /* border: 1px solid red solid red; */
     max-width: 800px;
     margin: 0 auto;
     flex-direction: column;
@@ -529,7 +593,7 @@ h1 {
 .feature-card p {
     padding: 0 1rem 1rem;
     color: #ffffff9f;
-    /* border: 1px solid; */
+    /* border: 1px solid red solid; */
     text-wrap: wrap;
 }
 
@@ -563,7 +627,7 @@ h1 {
     background-color: #f9f9f9;
     border-radius: 8px;
     padding: 1.5rem;
-    border: 1px solid #e7e7e7;
+    border: 1px solid red solid #e7e7e7;
 }
 
 .review-rating {
@@ -636,7 +700,7 @@ input,
 textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ced4da;
+    border: 1px solid red solid #ced4da;
     border-radius: 5px;
 }
 
@@ -682,7 +746,7 @@ textarea {
 }
 
 .footer-footer {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid red solid;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -695,7 +759,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    border-top: 1px solid;
+    border-top: 1px solid red solid;
     padding-top: 15px;
 
 }
@@ -704,7 +768,7 @@ textarea {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    border-bottom: 1px solid;
+    border-bottom: 1px solid red solid;
     padding: 15px;
 } */
 
@@ -740,7 +804,7 @@ textarea {
 .copyright{
     width:1200px;
     margin: 0 auto;
-    border-top: 1px solid #333;
+    border-top: 1px solid red solid #333;
     padding: 2rem 0;
     background-color: #020202;
     color: #1A1849;
@@ -816,7 +880,7 @@ address {
 }
 
 .newsletter {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid red solid;
     padding: 15px;
     width: 100%;
     margin: 0 auto;
@@ -943,7 +1007,7 @@ address {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid red solid #ddd;
     border-radius: 4px;
 }
 
@@ -965,7 +1029,7 @@ address {
 .copyright {
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid red solid #ddd;
     text-align: left;
     color: #666;
     font-size: 14px;
@@ -1003,7 +1067,7 @@ address {
         display: block;
         background: transparent;
         border: none;
-        /* border: 1px solid #ffff; */
+        /* border: 1px solid red solid #ffff; */
         color: #Fff;
         font-size: 1.5rem;
         cursor: pointer;
