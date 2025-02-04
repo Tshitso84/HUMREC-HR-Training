@@ -1157,6 +1157,7 @@ iframe {
 }
 
 
+
 .footer-section a:hover {
     font-weight: 600;
 }
@@ -1180,6 +1181,13 @@ iframe {
 
 .footer-section ul li a:hover {
     color: #333;
+}
+
+ .fa-solid{
+    color: red;
+    border: 1px solid red;
+    font-size: 20px;
+    width: 100%;
 }
 
 .newsletter input[type="email"] {
