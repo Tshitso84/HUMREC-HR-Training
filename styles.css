@@ -606,7 +606,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     max-width: 1300px;
-    padding: 2rem;
+    padding: 1rem;
     margin: 0 auto;
 }
 
@@ -826,7 +826,6 @@ textarea {
     width: 100%;
     padding: 2rem 0;
     flex: 1;
-    border: 1px solid;
 }
 
 .contact-title-container h2 {
