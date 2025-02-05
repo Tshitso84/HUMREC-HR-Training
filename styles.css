@@ -105,7 +105,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.login-button{
+.login-button {
     padding: 10px 22px;
     border-radius: 20px;
     font-size: 16px;
@@ -633,10 +633,10 @@ body {
         border-radius: 0 266px;
         box-shadow: 0 100px 80px #00000012, 0 64px 46px #0000000f, 0 40px 25px #0000000d, 0 20px 13px #0000000a, 0 8px 7px #00000008, 0 2px 3px #00000005;
     }
-    
 
-    
-    
+
+
+
 
 }
 
@@ -662,7 +662,7 @@ body {
     flex-direction: column;
     justify-content: center;
 
-    h4{
+    h4 {
         font-weight: 200;
         letter-spacing: 1px;
     }
@@ -684,7 +684,7 @@ body {
 }
 
 .media-content small {
-    font-size:clamp(12px,.8rem, 16px) ;
+    font-size: clamp(12px, .8rem, 16px);
     color: #ffffff9f;
 }
 
@@ -1322,7 +1322,7 @@ svg {
 
 /* LOGIN FORM */
 
-.login-body{
+.login-body {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -1353,12 +1353,12 @@ svg {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    img{
+    img {
         width: 100%;
         border: 1px solid;
         border-radius: 4px;
         border: none;
-        }
+    }
 
 }
 
@@ -1492,247 +1492,77 @@ input:focus {
 
 /* STUDENT REGISTRATION FORM */
 
-#registration{ background: linear-gradient(135deg, #71b7e6, #9b59b6);
+#registration {
+    /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+    background-color: #fff;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: clamp(10px, 3vw, 30px);}
+    padding: clamp(10px, 3vw, 30px);
+}
 
-.container {
-    max-width: min(95vw, 1000px);
+.admission-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
-    background: white;
-    padding: clamp(15px, 3vw, 30px);
-    border-radius: clamp(8px, 1vw, 12px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
+    max-width: 600px;
 }
 
-.title {
-    font-size: clamp(20px, 4vw, 28px);
-    font-weight: 500;
-    position: relative;
-    margin-bottom: clamp(20px, 4vw, 35px);
-    color: #333;
-}
-
-.title::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    height: 3px;
-    width: clamp(25px, 5vw, 35px);
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
-}
-
-.form-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
-    gap: clamp(15px, 2vw, 25px);
-}
-
-.input-box {
-    margin-bottom: clamp(10px, 2vw, 20px);
-}
-
-.input-box label {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 8px;
-    font-size: clamp(14px, 1.5vw, 16px);
-    color: #444;
-}
-
-.input-box input,
-.input-box select,
-.input-box textarea {
-    width: 100%;
-    padding: clamp(8px, 1.5vw, 12px);
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    outline: none;
-    transition: all 0.3s ease;
-    font-size: clamp(14px, 1.5vw, 16px);
-}
-
-.input-box input:focus,
-.input-box select:focus,
-.input-box textarea:focus {
-    border-color: #9b59b6;
-    box-shadow: 0 0 5px rgba(155, 89, 182, 0.2);
-}
-
-.full-width {
-    grid-column: 1 / -1;
-}
-
-.gender-box {
-    display: flex;
-    flex-wrap: wrap;
-    gap: clamp(10px, 2vw, 20px);
-    padding: 10px 0;
-}
-
-.hobbies-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
-    gap: clamp(8px, 1.5vw, 15px);
-}
-
-.checkbox-group {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: clamp(14px, 1.5vw, 16px);
-}
-
-.checkbox-group input[type="text"] {
-    flex: 1;
-    min-width: 0;
-    margin-left: 8px;
-}
-
-.button-container {
+.form-title {
     text-align: center;
-    margin-top: clamp(20px, 4vw, 35px);
+    margin-bottom: 20px;
+    color: #333;
+
+    h2{
+        font-size: 1rem;
+        color: #c9302c;
+        margin-bottom: 10px;
+    }
+}
+
+.form-row {
     display: flex;
     gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 
-button {
-    padding: clamp(10px, 2vw, 15px) clamp(20px, 4vw, 40px);
-    border: none;
+.form-row>* {
+    flex: 1;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
     border-radius: 4px;
-    cursor: pointer;
-    font-size: clamp(14px, 1.5vw, 16px);
-    transition: all 0.3s ease;
-    min-width: 120px;
 }
 
 .submit-btn {
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
+    max-width:200px;
+    padding: 12px;
+    background-color: #d9534f;
     color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.reset-btn {
-    background: #f2f2f2;
-    color: #333;
+.submit-btn:hover {
+    background-color: #c9302c;
 }
 
-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-button:active {
-    transform: translateY(0);
-}
-
-/* Mobile-specific styles */
-@media screen and (max-width: 480px) {
-    .container {
-        padding: 15px;
-        margin: 10px;
-    }
-
-    .hobbies-box {
-        grid-template-columns: 1fr;
-    }
-
-    .checkbox-group {
-        font-size: 14px;
-    }
-
-    .button-container {
+@media screen and (max-width: 600px) {
+    .form-row {
         flex-direction: column;
-        align-items: stretch;
+        gap: 10px;
     }
 
-    button {
-        width: 100%;
-    }
-}
-
-/* Tablet-specific styles */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .hobbies-box {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Large screen optimizations */
-@media screen and (min-width: 1200px) {
-    .container {
-        padding: 40px;
-    }
-
-    .form-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-    .container {
-        background: #1a1a1a;
-    }
-
-    .title, .input-box label, .checkbox-group {
-        color: #e0e0e0;
-    }
-
-    .input-box input,
-    .input-box select,
-    .input-box textarea {
-        background: #2d2d2d;
-        border-color: #404040;
-        color: #e0e0e0;
-    }
-
-    .reset-btn {
-        background: #2d2d2d;
-        color: #e0e0e0;
-    }
-}
-
-/* High contrast mode support */
-@media (prefers-contrast: high) {
-    .container {
-        box-shadow: 0 0 0 2px #000;
-    }
-
-    .input-box input,
-    .input-box select,
-    .input-box textarea {
-        border-width: 2px;
-    }
-}
-
-/* Reduced motion support */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        transition: none !important;
-        animation: none !important;
-    }
-}
-
-/* Print styles */
-@media print {
-    body {
-        background: none;
-    }
-
-    .container {
-        box-shadow: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    button {
-        display: none;
+    .admission-form {
+        padding: 20px;
     }
 }

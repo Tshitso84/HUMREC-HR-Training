@@ -141,3 +141,15 @@ document.querySelectorAll('.feature-card').forEach(card => {
      selectedRating = 0;
      starElements.forEach(s => s.classList.remove('active'));
  });
+
+//  REGISTRATION FORM
+
+
+document.getElementById('admissionForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+    console.log(data);
+    // Add your form submission logic here
+    alert('Form submitted! Check console for data.');
+});
