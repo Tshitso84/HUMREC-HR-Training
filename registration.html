@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humrec Training - Expert Team Training Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+<section id="registration">
+
+
+    <div class="container">
+        <h1 class="title">Student Registration Form</h1>
+        <form>
+            <div class="form-content">
+                <div class="input-box">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" maxlength="50" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" maxlength="50" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">Email ID</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Gender</label>
+                    <div class="gender-box">
+                        <label><input type="radio" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label>Date of Birth</label>
+                    <input type="date" required>
+                </div>
+
+                <div class="input-box full-width">
+                    <label for="address">Address</label>
+                    <textarea id="address" rows="3" required></textarea>
+                </div>
+
+                <div class="input-box">
+                    <label for="city">City</label>
+                    <input type="text" id="city" maxlength="50" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="pincode">Pin Code</label>
+                    <input type="text" id="pincode" pattern="[0-9]{6}" maxlength="6" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="state">State</label>
+                    <input type="text" id="state" maxlength="50" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" required>
+                </div>
+
+                <div class="input-box full-width">
+                    <label>Hobbies</label>
+                    <div class="hobbies-box">
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="hobbies" value="drawing"> Drawing
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="hobbies" value="singing"> Singing
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="hobbies" value="dancing"> Dancing
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="hobbies" value="sketching"> Sketching
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="hobbies" value="others"> Others
+                            <input type="text" maxlength="50" placeholder="Specify other hobbies">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="input-box full-width">
+                    <label>Qualification</label>
+                    <div class="hobbies-box">
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="qualification" value="high-school"> High School(10th)
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="qualification" value="higher-school"> Higher School(12th)
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="qualification" value="graduation"> Graduation(Bachelors)
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="qualification" value="post-graduation"> Post Graduation(Masters)
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="qualification" value="phd"> PhD
+                        </label>
+                    </div>
+                </div>
+
+                <div class="input-box full-width">
+                    <label>Courses Applied For</label>
+                    <div class="hobbies-box">
+                        <label class="checkbox-group">
+                            <input type="radio" name="course" value="bca"> BCA
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="radio" name="course" value="bcom"> B.Com
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="radio" name="course" value="bsc"> B.Sc
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="radio" name="course" value="ba"> BA
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="radio" name="course" value="mca"> MCA
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="radio" name="course" value="mcom"> M.Com
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="radio" name="course" value="msc"> M.Sc
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="radio" name="course" value="ma"> MA
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
