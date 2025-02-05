@@ -605,8 +605,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    max-width: 1300px;
-    padding: 1rem;
+    max-width: 1200px;
+    padding: 2rem;
     margin: 0 auto;
 }
 
@@ -614,8 +614,14 @@ body {
     .media-reviews-container {
         display: flex;
         flex-direction: column;
-        gap: 4rem;
+        gap: 1rem;
     }
+
+    .media-content p {
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    
 
 }
 
@@ -640,7 +646,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    h4{
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
 }
+
+
 
 .media-content span {
     font-size: 24px;
@@ -649,14 +662,14 @@ body {
 }
 
 .media-content p {
-    font-size: clamp(16px, 1.25vw, 24px);
+    font-size: clamp(14px, 1.25vw, 24px);
     font-weight: 600;
     line-height: 34px;
     margin-bottom: 30px;
 }
 
 .media-content small {
-    font-size: 16px;
+    font-size:clamp(12px,.8rem, 16px) ;
     color: #ffffff9f;
 }
 
