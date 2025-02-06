@@ -21,7 +21,7 @@ p {
 }
 
 body {
-    font-family: roboto;
+    font-family: 'roboto',serif;
     line-height: 1.7;
     color: var(--text-color);
     background-color: #1A1849;
