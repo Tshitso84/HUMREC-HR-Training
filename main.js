@@ -153,3 +153,6 @@ document.getElementById('admissionForm').addEventListener('submit', function(e) 
     // Add your form submission logic here
     alert('Form submitted! Check console for data.');
 });
+
+// NUMBER COUNT ANIMATION
+
