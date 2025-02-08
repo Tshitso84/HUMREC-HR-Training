@@ -2089,6 +2089,20 @@ input:focus {
     gap: 2rem;
 }
 
+@media(max-width:768px){
+    .services-content{
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+    .services-container{
+        height: 100%;
+    }
+
+    #services{
+        height: 100%;
+    }
+}
+
 .service-image-container {
     width: 100%;
 
