@@ -2101,6 +2101,15 @@ input:focus {
     #services{
         height: 100%;
     }
+
+    .services-title h3 {
+        font-size: 13px;
+    }
+
+    .services-title h2 {
+        font-size: 1.5rem;
+    }
+
 }
 
 .service-image-container {
