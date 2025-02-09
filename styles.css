@@ -541,7 +541,7 @@ body {
     color: #fff;
 }
 
-.feature-btn:hover{
+.feature-btn:hover {
     color: #0484C3;
 }
 
@@ -1696,10 +1696,10 @@ input:focus {
     transition: .2s ease;
 }
 
-.about-login:hover{
-    color: #0484C3 ;
+.about-login:hover {
+    color: #0484C3;
     background-color: #fff;
-    border: 2px solid  #0484C3;
+    border: 2px solid #0484C3;
 }
 
 .about-container {
@@ -2089,16 +2089,17 @@ input:focus {
     gap: 2rem;
 }
 
-@media(max-width:768px){
-    .services-content{
+@media(max-width:768px) {
+    .services-content {
         grid-template-columns: 1fr;
         height: 100%;
     }
-    .services-container{
+
+    .services-container {
         height: 100%;
     }
 
-    #services{
+    #services {
         height: 100%;
     }
 
@@ -2156,17 +2157,41 @@ input:focus {
     border-bottom: none;
 }
 
-.about-detail{
-    max-width: 1200px;
+.about-detail {
+    /* max-width: 1200px;
     height: 100%;
-    border: 1px solid red;
+    border: 1px solid red; */
+
+    /* background-color: #0a192f; */
+    border-radius: 0 0 226px 226px;
+    /* background-image: linear-gradient(#1a184962, rgba(10, 25, 47, 0.445)), url('/api/placeholder/1920/1080'); */
+    /* background-size: cover;
+        background-position: center; */
+    color: #1A1849;
+    padding: 10rem 2rem;
+    position: relative;
+    /* overflow: hidden; */
+    /* box-shadow: 0 100px 80px #00000012, 0 64px 46px #0000000f, 0 40px 25px #0000000d, 0 20px 13px #0000000a, 0 8px 7px #00000008, 0 2px 3px #00000005; */
+
 }
 
-.about-detail-container{
-    width: 100%;
+.about-detail-container {
+    max-width: 1200px;
+    /* border-radius: 20px; */
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding-top: 40px;
-    padding-bottom: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    position: relative;
+    z-index: 2;
 
+}
+
+.about-detail-container-content {
+    border-right: 1px solid #ccc;
+    padding: 10px 2rem;
+}
+
+.about-detail-container-content:nth-child(3){
+    border-right: none;
 }
