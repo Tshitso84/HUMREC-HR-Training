@@ -2129,7 +2129,7 @@ input:focus {
     flex-wrap: wrap;
     border-bottom: 1px solid #ced4da;
     padding: 10px 0 30px 10px;
-    gap: 10px;
+    gap: 10px;}
 
 
 
@@ -2150,36 +2150,4 @@ input:focus {
 
 .info-block:nth-child(4) {
     border-bottom: none;
-}
-
-.about-detail {
-    border-radius: 0 0 226px 226px;
-    color: #1A1849;
-    padding: 10rem 2rem;
-    position: relative;
-}
-
-.about-detail-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    position: relative;
-    z-index: 2;
-
-}
-
-.about-detail-container-content {
-    border-right: 1px solid #ccc;
-    padding: 10px 2rem;
-}
-
-    li{
-        list-style: circle;
-    }
-}
-
-.about-detail-container-content:nth-child(3){
-    border-right: none;
 }
