@@ -13,8 +13,6 @@
     --accent-color: #ffd700;
     --text-color: #333333;
     --spacing-unit: 1rem;
-}
-
 a {
     text-decoration: none;
 }
@@ -2190,6 +2188,11 @@ input:focus {
 .about-detail-container-content {
     border-right: 1px solid #ccc;
     padding: 10px 2rem;
+}
+
+    li{
+        list-style: circle;
+    }
 }
 
 .about-detail-container-content:nth-child(3){
