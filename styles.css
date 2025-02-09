@@ -2174,7 +2174,7 @@ input:focus {
 
     .about-detail-container-content{
         text-align: left;
-        border: 1px solid #ccc;
+        /* border: 1px solid #ccc; */
         gap: 10px;
 
     }
