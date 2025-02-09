@@ -13,6 +13,8 @@
     --accent-color: #ffd700;
     --text-color: #333333;
     --spacing-unit: 1rem;
+}
+
 a {
     text-decoration: none;
 }
@@ -2129,9 +2131,7 @@ input:focus {
     flex-wrap: wrap;
     border-bottom: 1px solid #ced4da;
     padding: 10px 0 30px 10px;
-    gap: 10px;}
-
-
+    gap: 10px;
 
     span {
         font-size: 1rem;
@@ -2146,7 +2146,11 @@ input:focus {
         color: #ccc;
         list-style: circle;
     }
+
+
 }
+
+
 
 .info-block:nth-child(4) {
     border-bottom: none;
