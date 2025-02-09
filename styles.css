@@ -2141,11 +2141,8 @@ input:focus {
     }
 
     li {
-        /* display: flex;
-        flex-direction: column; */
         font-size: 12px;
         font-weight: 400;
-        /* border: 1px solid; */
         color: #ccc;
         list-style: circle;
     }
@@ -2156,26 +2153,14 @@ input:focus {
 }
 
 .about-detail {
-    /* max-width: 1200px;
-    height: 100%;
-    border: 1px solid red; */
-
-    /* background-color: #0a192f; */
     border-radius: 0 0 226px 226px;
-    /* background-image: linear-gradient(#1a184962, rgba(10, 25, 47, 0.445)), url('/api/placeholder/1920/1080'); */
-    /* background-size: cover;
-        background-position: center; */
     color: #1A1849;
     padding: 10rem 2rem;
     position: relative;
-    /* overflow: hidden; */
-    /* box-shadow: 0 100px 80px #00000012, 0 64px 46px #0000000f, 0 40px 25px #0000000d, 0 20px 13px #0000000a, 0 8px 7px #00000008, 0 2px 3px #00000005; */
-
 }
 
 .about-detail-container {
     max-width: 1200px;
-    /* border-radius: 20px; */
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
