@@ -2252,7 +2252,7 @@ input:focus {
     left: 0;
     top: 0;
     background: linear-gradient(to left,transparent, #fff);
-    width: 200px;
+    width: 50px;
     height: 100%;
     z-index: 2;
   }
@@ -2263,7 +2263,7 @@ input:focus {
     right: 0;
     top: 0;
     background: linear-gradient(to right,transparent, #fff);
-    width: 200px;
+    width: 50px;
     height: 100%;
     z-index: 2;
   }
