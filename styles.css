@@ -466,10 +466,10 @@ body {
     display: block;
     align-self: center;
     padding: 8px 16px;
-    background: white;
-    border: 2px solid #0066FF;
+    background: transparent;
+    border: 2px solid #0484C3;
     border-radius: 20px;
-    color: #0066FF;
+    color: #0484C3;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -477,7 +477,8 @@ body {
 }
 
 .register-button:hover {
-    background: #f5f8ff;
+    background: #0484C3;
+    color: #fff;
 }
 
 .arrow {
@@ -823,7 +824,7 @@ textarea {
     border: none;
     padding: 1rem;
     font-size: 1.1rem;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -898,7 +899,7 @@ textarea {
     align-items: center;
     gap: 10px;
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    border-radius: 25px;
     padding: 1rem;
     transition: background-color 0.3s ease;
 }
@@ -1182,7 +1183,7 @@ iframe:hover {
 .newsletter input[type="email"] {
     width: 100%;
     padding: 12px;
-    border-radius: 16px;
+    border-radius: 25px;
     border: 2px solid #000;
 }
 
@@ -1190,7 +1191,7 @@ iframe:hover {
     padding: 12px 24px;
     background-color: transparent;
     border: 2px solid #000;
-    border-radius: 16px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 14px;
     transition: background-color 0.2s;
@@ -1437,7 +1438,7 @@ iframe:hover {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 25px;
     background: white;
     cursor: pointer;
     font-size: 0.9rem;
@@ -1484,7 +1485,7 @@ input {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 25px;
     font-size: 0.9rem;
     outline: none;
     transition: border-color 0.2s;
@@ -1500,7 +1501,7 @@ input:focus {
     background: #2196f3;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 25px;
     font-size: 0.9rem;
     cursor: pointer;
     transition: background-color 0.2s;
@@ -1638,7 +1639,7 @@ input:focus {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 20px;
 }
 
 .submit-btn {
@@ -1648,7 +1649,7 @@ input:focus {
     background: #2196f3;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -1756,10 +1757,25 @@ input:focus {
     text-align: center;
     padding: 2rem;
     background: rgba(255, 255, 255, 0.03);
-    border-radius: 12px;
+    border-radius: 25px;
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.stat-item::before{
+    content: '';
+    position: absolute;
+    background-image: url(assets/images/history_bg_couter.jpg);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 25px;
+    opacity: .7;
 }
 
 .stat-item:hover {
@@ -2230,11 +2246,12 @@ input:focus {
     overflow: hidden;
     background: #fff;
     padding: 40px 0;
-    box-shadow: 0 2px 4px;
-    /* box-shadow: 0px 15px 55px -29px rgba(0,0,0,0.51);
--webkit-box-shadow: 0px 15px 55px -29px rgba(0,0,0,0.51);
--moz-box-shadow: 0px 15px 55px -29px rgba(0,0,0,0.51); */
-  }
+    /* box-shadow: 0 2px 4px; */
+    border-bottom-right-radius: 226px;
+    border-bottom-left-radius: 226px;
+    box-shadow: 1px 74px 71px -13px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 74px 71px -13px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 74px 71px -13px rgba(0,0,0,0.3);  }
 
   .logo-slide {
     display: flex;
@@ -2252,7 +2269,7 @@ input:focus {
     left: 0;
     top: 0;
     background: linear-gradient(to left,transparent, #fff);
-    width: 50px;
+    width: 200px;
     height: 100%;
     z-index: 2;
   }
@@ -2263,7 +2280,7 @@ input:focus {
     right: 0;
     top: 0;
     background: linear-gradient(to right,transparent, #fff);
-    width: 50px;
+    width: 200px;
     height: 100%;
     z-index: 2;
   }
