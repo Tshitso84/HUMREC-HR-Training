@@ -2230,6 +2230,9 @@ input:focus {
     overflow: hidden;
     background: white;
     padding: 40px 0;
+    box-shadow: 0px 15px 55px -29px rgba(0,0,0,0.51);
+-webkit-box-shadow: 0px 15px 55px -29px rgba(0,0,0,0.51);
+-moz-box-shadow: 0px 15px 55px -29px rgba(0,0,0,0.51);
   }
 
   .logo-slide {
@@ -2238,6 +2241,28 @@ input:focus {
     animation: slideshow 30s linear infinite;
     gap: 40px;
     width: max-content;
+  }
+
+  .client-logos::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    background: linear-gradient(to left,transparent, #fff);
+    width: 200px;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .client-logos::after{
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    background: linear-gradient(to right,transparent, #fff);
+    width: 200px;
+    height: 100%;
+    z-index: 2;
   }
 
   .logo-slide:nth-child(2) {
