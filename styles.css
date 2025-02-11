@@ -257,6 +257,7 @@ body {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    border: 2px solid #0484C3;
 
     box-shadow: 0 100px 80px #00000012, 0 64px 46px #0000000f, 0 40px 25px #0000000d, 0 20px 13px #0000000a, 0 8px 7px #00000008, 0 2px 3px #00000005;
 
@@ -368,11 +369,12 @@ body {
     position: relative;
     height: 100vh;
     padding: 5rem 2rem;
-    background-color: #f0f0f0;
+    background-color: #fff;
     display: flex;
     align-items: center;
     color: #1A1849;
-    box-shadow: 0 100px 80px #00000012, 0 64px 46px #0000000f, 0 40px 25px #0000000d, 0 20px 13px #0000000a, 0 8px 7px #00000008, 0 2px 3px #00000005;
+    /* box-shadow: 0 100px 80px #00000012, 0 64px 46px #0000000f, 0 40px 25px #0000000d, 0 20px 13px #0000000a, 0 8px 7px #00000008, 0 2px 3px #00000005; */
+    z-index: 1;
 
 }
 
@@ -383,9 +385,14 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url();
+    background-image: url(assets/images/Overlay.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+    opacity: .2;
+    z-index: -1;
 }
 
 .company-card {
@@ -2466,7 +2473,7 @@ input:focus {
     overflow: hidden;
     background: #fff;
     padding: 40px 0;
-    /* box-shadow: 0 2px 4px; */
+    border-top: 1px solid #ccc;
     border-bottom-left-radius: 226px;
     box-shadow: 1px 74px 71px -13px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 1px 74px 71px -13px rgba(0, 0, 0, 0.3);
@@ -2483,8 +2490,9 @@ input:focus {
     width: max-content;
 }
 
-.logo-slide img:nth-child(13){
-    padding-right: 70px;
+.logo-slide img:nth-child(11){
+    /* padding-right: 70px; */
+    margin-right: 70px;
 }
 
 .client-logos::before {
@@ -2515,9 +2523,11 @@ input:focus {
 
 .logo-slide img {
     height: 150px;
-    width: auto;
+    width: 150px;
     object-fit: cover;
     padding: 10px;
+    border-radius: 50%;
+    /* box-shadow: 4px 2px 10px  rgba(0, 0, 0, 0.1); */
 }
 
 @keyframes slideshow {
