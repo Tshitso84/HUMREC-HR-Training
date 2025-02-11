@@ -2408,7 +2408,7 @@ input:focus {
 
 .client-logos {
     width: 100%;
-    height: 150px;
+    height: 220px;
     position: relative;
     overflow: hidden;
     background: #fff;
@@ -2461,7 +2461,7 @@ input:focus {
 }
 
 .logo-slide img {
-    height: 120px;
+    height: 150px;
     width: auto;
     object-fit: cover;
     padding: 10px;
