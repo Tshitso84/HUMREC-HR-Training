@@ -2430,6 +2430,10 @@ input:focus {
     width: max-content;
 }
 
+.logo-slide img:nth-child(13){
+    padding-right: 70px;
+}
+
 .client-logos::before {
     position: absolute;
     content: '';
@@ -2457,7 +2461,7 @@ input:focus {
 }
 
 .logo-slide img {
-    height: 80px;
+    height: 120px;
     width: auto;
     object-fit: cover;
     padding: 10px;
