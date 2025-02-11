@@ -1845,7 +1845,8 @@ input:focus {
 
 .stats-section {
     /* background-color: #0a192f; */
-    border-radius: 0 0 226px 226px;
+    /* border-radius: 0 0 226px 226px; */
+    border-bottom-right-radius: 226px;
     background-image: linear-gradient(#1a184962, rgba(10, 25, 47, 0.445)), url('/api/placeholder/1920/1080');
     /* background-size: cover;
     background-position: center; */
