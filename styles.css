@@ -2208,7 +2208,7 @@ input:focus {
         padding: 8px 16px;
         border-radius: 25px;
         /* width: 100%; */
-        margin-top: 40px;
+        margin-top: 10px;
         font-weight: 600;
         font-size: 1rem;
         background-color: #0484C3;
@@ -2220,6 +2220,22 @@ input:focus {
 
     button:hover{
         background-color: #1976d2;
+    }
+}
+
+.btn-container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1a1849b2;
+    margin-top: 30px;
+    
+    span{
+        font-size: 12px;
+        text-align: center;
+        margin-top: 10px;
+
     }
 }
 
