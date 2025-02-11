@@ -331,7 +331,6 @@ body {
     display: flex;
     align-items: center;
     color: #1A1849;
-    border-radius: 0 0 0 266px;
     box-shadow: 0 100px 80px #00000012, 0 64px 46px #0000000f, 0 40px 25px #0000000d, 0 20px 13px #0000000a, 0 8px 7px #00000008, 0 2px 3px #00000005;
 
 }
@@ -1735,8 +1734,8 @@ input:focus {
 #core-values {
     width: 100%;
     /* max-width: 1200px; */
-    background-image: linear-gradient(#1a184962, rgba(10, 25, 47, 0.445)), url('/api/placeholder/1920/1080');
-    height: 100vh;
+    /* background-image: linear-gradient(#1a184962, rgba(10, 25, 47, 0.445)), url('/api/placeholder/1920/1080'); */
+    /* height: 100vh; */
     place-content: center;
     border-top-left-radius: 226px;
     border-top-right-radius: 226px;
@@ -1744,38 +1743,22 @@ input:focus {
     backdrop-filter: blur(30px);
     position: relative;
     z-index: 1;
-    box-shadow: 1px -46px 71px -13px rgba(0,0,0,0.3);
+    /* box-shadow: 1px -46px 71px -13px rgba(0,0,0,0.3);
 -webkit-box-shadow: 1px -46px 71px -13px rgba(0,0,0,0.3);
--moz-box-shadow: 1px -46px 71px -13px rgba(0,0,0,0.3);
+-moz-box-shadow: 1px -46px 71px -13px rgba(0,0,0,0.3); */
 
 }
 
-/* #core-values::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(assets/images/history_bg_couter.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-top-left-radius: 226px;
-    border-top-right-radius: 226px;
-
-    opacity: .7;
-    z-index: -1;
-} */
 
 .ideology {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    /* padding: 5rem 0; */
+    /* border: 1px solid; */
 
 }
 
@@ -1792,12 +1775,6 @@ input:focus {
     position: relative;
 }
 
-@media(max-width:1250px){
-.about-icon-container{
-    
-}
-
-}
 
 .about-icon-container::before{
     content: '';
@@ -1814,7 +1791,7 @@ input:focus {
     background-size: cover;
     border-radius: 25px;
 
-    opacity: .7;
+    opacity: .9;
     z-index: -1;
 
 }
@@ -2383,7 +2360,6 @@ input:focus {
     background: #fff;
     padding: 40px 0;
     /* box-shadow: 0 2px 4px; */
-    border-bottom-right-radius: 226px;
     border-bottom-left-radius: 226px;
     box-shadow: 1px 74px 71px -13px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 1px 74px 71px -13px rgba(0, 0, 0, 0.3);
