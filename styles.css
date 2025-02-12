@@ -372,7 +372,7 @@ body {
 .company-info {
     position: relative;
     height: 100vh;
-    padding: 5rem 2rem;
+    padding:.7rem;
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -425,18 +425,17 @@ body {
 }
 
 @media(max-width:1050px) {
-    .company-card {
-        grid-template-columns: 1fr;
 
-        p {
-            text-align: center;
-        }
+    .company-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 
-        h2 {
-            line-height: 1.2;
-            text-align: center;
-
-        }
+    .company-info{
+        height: 100%;
     }
 
     .hero {
@@ -2356,6 +2355,45 @@ input:focus {
 
 }
 
+@media(max-width:1024px){
+    #services{
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+        }
+
+        #about{
+            border-bottom-left-radius: 100px;
+        }
+
+        .stats-section{
+            border-bottom-right-radius: 100px;
+            padding: 2rem;
+
+        }
+
+        .client-logos{
+            border-bottom-left-radius: 100px;
+
+        }
+
+        #media-reviews{
+            margin: 0;
+            padding:1rem .7rem;
+            height: 100%;
+            border-bottom-left-radius: 100px;
+            border-top-right-radius: 100px;
+    
+        }
+        .features-title-container{
+            margin-bottom: 2rem;
+        }
+
+        /* .features{
+            padding: 100px 1rem 20px 1rem;
+        } */
+        
+}
+
 #services::before {
     content: '';
     position: absolute;
@@ -2691,9 +2729,9 @@ input:focus {
 }
 
 @media (max-width: 480px) {
-    .client-logos {
-        /* height: 100px; */
-    }
+    /* .client-logos {
+        height: 100px;
+    } */
 
     .logo-slide img {
         height: 50px;
