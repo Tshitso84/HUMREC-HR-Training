@@ -726,9 +726,9 @@ body {
         color: var(--secondary-color);
         /* line-height: 1.8; */
         color: #ccc;
-        font-family: caveat;
-        font-size: 24px;
-        letter-spacing: 1px;
+        /* font-family: caveat;
+        font-size: 24px; */
+        /* letter-spacing: 1px; */
     }
 }
 
@@ -1047,9 +1047,9 @@ textarea {
 .contact-title-container p {
     font-size: clamp(.9375rem, .8vw, 1.125rem);
     color: #ccc;
-    font-family: caveat;
+    /* font-family: caveat;
     font-size: 24px;
-    letter-spacing: 1px;
+    letter-spacing: 1px; */
 }
 
 .contact-details {
