@@ -434,8 +434,10 @@ body {
         text-align: center;
     }
 
-    .company-info{
+    .company-info::before{
         height: 100%;
+        background-size: contain;
+        background-position: top ;
     }
 
     .hero {
@@ -462,15 +464,15 @@ body {
     }
 
 
-    .hero-content {
+    /* .hero-content {
         max-width: 1200px;
         margin-top: 40%;
 
-        /* button {
+        button {
             width: 100px;
-        } */
+        }
     }
-
+ */
     .hero-content p {
         text-align: center;
 
@@ -1549,7 +1551,13 @@ iframe:hover {
 @media (max-width: 480px) {
     .hero-content {
         padding-top: 180px;
-        height: 100vh;
+        height: 100%;
+        margin-bottom: 15px;
+
+        p{
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
     }
 
     /* .newsletter-form {
