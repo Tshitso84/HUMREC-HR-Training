@@ -670,6 +670,7 @@ body {
 .feature-card h3 {
     padding: .7rem;
     color: var(--secondary-color);
+    text-transform: capitalize;
 }
 
 .feature-card p {
@@ -706,7 +707,9 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 5rem;
+    padding-bottom: 8px;
     margin-top: 0;
+    border-bottom: 1px dotted #666;
 
 
     h2 {
@@ -721,7 +724,11 @@ body {
     p {
         text-align: center;
         color: var(--secondary-color);
-        line-height: 1.8;
+        /* line-height: 1.8; */
+        color: #ccc;
+        font-family: caveat;
+        font-size: 24px;
+        letter-spacing: 1px;
     }
 }
 
@@ -758,6 +765,10 @@ body {
 .feature-card h3 {
     padding: .7rem;
     color: var(--secondary-color);
+    text-transform: capitalize;
+    font-size: 18px;
+    letter-spacing: 1px;
+    /* font-weight: 400; */
 }
 
 .feature-card p {
@@ -1035,7 +1046,10 @@ textarea {
 
 .contact-title-container p {
     font-size: clamp(.9375rem, .8vw, 1.125rem);
-    color: #cfcfcf;
+    color: #ccc;
+    font-family: caveat;
+    font-size: 24px;
+    letter-spacing: 1px;
 }
 
 .contact-details {
@@ -1094,6 +1108,7 @@ i {
     .contact-details {
         width: 100%;
         text-align: center;
+        border-bottom: 1px dotted #666;
     }
 
     .detail {
@@ -1913,13 +1928,17 @@ input:focus {
 }
 
 .about-title {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px dotted #666;
 }
 
 .about-title h3 {
-    font-size: 15px;
+    /* font-size: 15px; */
     color: #666;
     text-transform: uppercase;
+    font-family: caveat;
+    font-size: 24px;
+    letter-spacing: 1px;
 }
 
 .about-title h2 {
@@ -2037,7 +2056,7 @@ input:focus {
 }
 
 .about-icon-info p {
-    color: #fff;
+    color: #ccc;
     margin: 0;
     line-height: 1.6;
     font-size: 0.95rem;
