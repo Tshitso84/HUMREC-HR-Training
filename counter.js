@@ -69,4 +69,16 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.classList.toggle('active');
     });
 });
-  
+
+
+
+
+// SERVICES DROPDOWN
+
+document.querySelectorAll('.info-block span').forEach(span => {
+  span.addEventListener('click', () => {
+      const block = span.parentElement;
+      block.classList.toggle('active');
+  });
+});
+
