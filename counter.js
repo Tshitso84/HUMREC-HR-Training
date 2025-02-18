@@ -77,8 +77,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.querySelectorAll('.info-block span').forEach(span => {
   span.addEventListener('click', () => {
-      const block = span.parentElement;
-      block.classList.toggle('active');
+      // Get all info blocks
+      const allBlocks = document.querySelectorAll('.info-block');
+      
+      // Get the parent block of clicked span
+      const clickedBlock = span.parentElement;
+      
+      // If the clicked block is already active, just close it
+      if (clickedBlock.classList.contains('active')) {
+          clickedBlock.classList.remove('active');
+      } else {
+          // Remove active class from all blocks
+          allBlocks.forEach(block => {
+              block.classList.remove('active');
+          });
+          
+          // Add active class to clicked block
+          clickedBlock.classList.add('active');
+      }
   });
 });
-
