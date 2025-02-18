@@ -2860,6 +2860,10 @@ input:focus {
 }
 
 .btn-container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     padding: 8px 16px;
     border-radius: 25px;
     margin-top: 10px;
@@ -2871,6 +2875,11 @@ input:focus {
     cursor: pointer;
     border: none;
     text-transform: capitalize;
+}
+
+.btn-container button i{
+    color: #fff;
+    font-size: 24px;
 }
 
 .btn-container button:hover {
@@ -2897,6 +2906,12 @@ input:focus {
         grid-template-columns: 1fr;
         height: 100%;
     }
+
+    .btns{
+        gap: 10px;
+        flex-direction: column-reverse;
+    }
+    
 
     .services-container {
         height: 100%;
