@@ -543,6 +543,8 @@ body {
 .register-button:hover {
     background: #0484C3;
     color: #fff;
+    transform: translateY(-3PX);
+
 }
 
 .arrow {
@@ -582,6 +584,8 @@ body {
 
 .company-card .login-cta:hover {
     background-color: #2675aa;
+    transform: translateY(-3PX);
+
 }
 
 .company-crest {
@@ -609,6 +613,8 @@ body {
 
 .feature-btn:hover {
     color: #0484C3;
+    transform: translateY(-3PX);
+
 }
 
 .features-title-container {
@@ -698,6 +704,8 @@ body {
 
 .feature-btn:hover {
     color: #0484C3;
+    transform: translateY(-3PX);
+
 }
 
 .features-title-container {
@@ -1390,6 +1398,8 @@ iframe:hover {
 .newsletter button:hover {
     background-color: #000;
     color: #fff;
+    transform: translateY(-3PX);
+
 }
 
 .newsletter-form {
@@ -1668,6 +1678,8 @@ iframe:hover {
 
 .google-btn:hover {
     background-color: #f8f8f8;
+    transform: translateY(-3PX);
+
 }
 
 .google-icon {
@@ -1876,6 +1888,8 @@ input:focus {
 
 .submit-btn:hover {
     background: #1976d2;
+    transform: translateY(-3PX);
+
 }
 
 @media screen and (max-width: 600px) {
@@ -1941,6 +1955,8 @@ input:focus {
     color: #0484C3;
     background-color: #fff;
     border: 2px solid #0484C3;
+    transform: translateY(-3PX);
+
 }
 
 .about-container {
@@ -2788,8 +2804,21 @@ input:focus {
 .info-block span::after {
     content: '▼';
     position: absolute;
-    right: 10px;
+    right: 3px;
     transition: transform 0.3s ease;
+    /* background-color: #0484C3; */
+    /* color: #fff; */
+    border-radius: 25px;
+    /* padding: 0 5px; */
+    transition: all .2s ease;
+    /* box-shadow: 0 100px 80px #00000012, 0 64px 46px #0000000f, 0 40px 25px #0000000d, 0 20px 13px #0000000a, 0 8px 7px #00000008, 0 2px 3px #00000005; */
+
+}
+
+.info-block span:hover::after{
+    background-color: #1976d2;
+    transform: translateY(-3PX);
+    color: #fff;
 }
 
 .info-block.active span::after {
@@ -2841,6 +2870,8 @@ input:focus {
 
 .btn-container button:hover {
     background-color: #1976d2;
+    transform: translateY(-3PX);
+
 }
 
 .btn-container span {
